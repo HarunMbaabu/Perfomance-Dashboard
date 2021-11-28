@@ -101,3 +101,12 @@ else:
         col3.metric("MTD Actual", int(MTDActual), "4%")
         col4.metric("TOTALS", int(totals), "4%")
         # st.line_chart(datareg)
+            
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)            
