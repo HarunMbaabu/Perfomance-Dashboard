@@ -57,7 +57,7 @@ if (selected_reg == "Cash Input and Mechanization"):
         # visualization section
         st.success('Total Sales for the {}'.format(x))
         col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Season to Date Actual", int(seaborn2date), "1.2 °F")
+        col1.metric("Season to Date Actual", int(seaborn2date), "1.2 %")
         col2.metric("MTD Target", int(MTDTarget), "-8%")
         col3.metric("MTD Actual", int(MTDActual), "4%")
         col4.metric("TOTALS", int(totals), "4%")
@@ -76,7 +76,7 @@ elif(selected_reg == "Credit"):
         # visualization section
         st.success('Total Sales for the {}'.format(x))
         col1, col2, col3, col4 = st.columns(4)
-        col1.metric("MonthTarget", int(seaborn2date), "1.2 °F")
+        col1.metric("MonthTarget", int(seaborn2date), "1.2% ")
         col2.metric("MTD Target", int(MTDTarget), "-8%")
         col3.metric("MTD Actual", int(MTDActual), "4%")
         col4.metric("TOTALS", int(totals), "4%")
@@ -96,7 +96,7 @@ else:
         # visualization section
         st.success('Total Sales for the {}'.format(x))
         col1, col2, col3, col4 = st.columns(4)
-        col1.metric("MonthTarget", int(seaborn2date), "1.2 °F")
+        col1.metric("MonthTarget", int(seaborn2date), "1.2 %")
         col2.metric("MTD Target", int(MTDTarget), "-8%")
         col3.metric("MTD Actual", int(MTDActual), "4%")
         col4.metric("TOTALS", int(totals), "4%")
